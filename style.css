@@ -51,7 +51,7 @@ header nav ul li a:hover {
 .accueil {
     padding: 60px 20px;
     text-align: center;
-    background: url('images/accueil-bg.jpg') no-repeat center/cover;
+    background: #000000;
     color: #fff;
 }
 
@@ -77,7 +77,7 @@ header nav ul li a:hover {
 
 .boutton:hover {
     transform: scale(1.05);
-    background: #ffffff;
+    background: #000000;
 }
 
 /* =================== SERVICES =================== */
