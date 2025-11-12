@@ -51,8 +51,8 @@ header nav ul li a:hover {
 .accueil {
     padding: 60px 20px;
     text-align: center;
-    background: #000000;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
 }
 
 .accueil .forme-contenu h1 {
@@ -66,8 +66,8 @@ header nav ul li a:hover {
 }
 
 .boutton {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 8px;
@@ -77,7 +77,7 @@ header nav ul li a:hover {
 
 .boutton:hover {
     transform: scale(1.05);
-    background: #000000;
+    background: #4d4e4c;
 }
 
 /* =================== SERVICES =================== */
@@ -130,8 +130,8 @@ header nav ul li a:hover {
 /* =================== RÉSERVATION =================== */
 .reservation {
     padding: 50px 20px;
-    color: #fff;
-    background-color: #000000;
+    color: #000000;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -302,7 +302,7 @@ header nav ul li a:hover {
 }
 
 .formulaire-contact button {
-    background-color: #1e90ff;
+    background-color: #000000;
     color: #fff;
     padding: 12px;
     width: 100%;
