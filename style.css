@@ -1,0 +1,347 @@
+/* =================== RESET & BASE =================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* =================== HEADER =================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffea00;
+}
+
+/* =================== ACCUEIL =================== */
+.accueil {
+    padding: 60px 20px;
+    text-align: center;
+    background: url('images/accueil-bg.jpg') no-repeat center/cover;
+    color: #fff;
+}
+
+.accueil .forme-contenu h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.accueil .forme-contenu p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.boutton {
+    background-color: #ffea00;
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.boutton:hover {
+    transform: scale(1.05);
+}
+
+/* =================== SERVICES =================== */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+/* =================== RÉSERVATION =================== */
+.reservation {
+    padding: 50px 20px;
+    background-color: #e6f2ff;
+    text-align: center;
+}
+
+.reservation h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.reservation p {
+    margin-bottom: 30px;
+}
+
+.reservation form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.reservation form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 500;
+}
+
+.reservation form input,
+.reservation form select,
+.reservation form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.reservation form textarea {
+    resize: vertical;
+}
+
+.reservation .btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reservation .btn:hover {
+    background-color: #0b64c3;
+}
+
+.confirmation {
+    margin-top: 20px;
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+
+/* =================== GALERIE =================== */
+.gallery-main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-main h1 {
+    margin-bottom: 20px;
+}
+
+.grille-gallerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.grille-gallerie img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.grille-gallerie img:hover {
+    transform: scale(1.05);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.lightbox[aria-hidden="false"] {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: 12px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 2rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* =================== CONTACT =================== */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.info-contact, .formulaire-contact {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.info-contact h2, .formulaire-contact h2 {
+    margin-bottom: 20px;
+}
+
+.info-contact p a {
+    text-decoration: none;
+    color: #1e90ff;
+    transition: color 0.3s;
+}
+
+.info-contact p a:hover {
+    color: #ffea00;
+}
+
+.formulaire-contact form input,
+.formulaire-contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulaire-contact button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.formulaire-contact button:hover {
+    background-color: #0b64c3;
+}
+
+#confirmation-contact {
+    display: none;
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+/* =================== FOOTER =================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e90ff;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* =================== RESPONSIVE =================== */
+@media(max-width: 768px){
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
